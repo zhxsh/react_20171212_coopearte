@@ -1,0 +1,64 @@
+﻿html,body,#app{
+	height: 100%;
+}
+.title{
+    background-color: #302F35;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+.form-padding{
+	padding-top: 24px;
+}
+.full-div{
+    width: 100%;
+    height: 100%;
+}
+
+.error-msg{
+    color:#F83939;
+    padding: 0px 15px;
+    height: 18px;
+    font-size: 11px;
+    width: initial;
+}
+
+.weui-input{
+    font-size: 15px;
+    padding: 8px 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+input:-webkit-autofill 
+{ 
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.login-btn{
+    background-color: #479BF8;
+}
+.login-btn:disabled{
+    background-color: #CCCCCC;
+}
+.validate{
+    color: #479BF8;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 25%;
+    text-align: right;
+    position: absolute;
+    right: 15px;
+}
+
+/*.contact-btn-delivered{
+    width:120px;
+    display:block;
+    color:#ffffff;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    margin:0px auto;
+    font-size: 14px;
+    text-align: center;
+    padding: 9px 0;
+}*/
+

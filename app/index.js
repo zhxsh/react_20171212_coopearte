@@ -1,4 +1,11 @@
-var react = require('react');
-import './index.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-console.log(react.version)
+import Root from './root';
+
+
+
+ReactDOM.render(
+	<Root></Root>,
+	document.getElementById('root')
+);
