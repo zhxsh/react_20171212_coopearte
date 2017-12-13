@@ -1,13 +1,24 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
-	entry: {
-		name: './app/index.js'
-	},
+	entry: [
+	    'webpack-dev-server/client?http://0.0.0.0:3333', 'webpack/hot/only-dev-server', './app/index.js'
+	 ],
 	output: {
-		path: path.resolve(__dirname,'./dist'),
+		path: path.resolve(__dirname,'./public'),
 		filename: 'bundle.js'
 	},
+	devServer: {
+	    contentBase: './dist',
+	    hot: true,
+	    open: true
+	},
+	plugins: [
+	    new HtmlWebpackPlugin({template: './index.tpl.html'}),
+	    new webpack.HotModuleReplacementPlugin()
+	 ],
 	module: {
 		loaders: [
 			{ 
