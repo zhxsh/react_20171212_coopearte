@@ -1,5 +1,5 @@
 ﻿html,body,#app{
-	height: 100%;
+    height: 100%;
 }
 .title{
     background-color: #302F35;
@@ -8,13 +8,13 @@
     padding: 15px;
 }
 .form-padding{
-	padding-top: 24px;
+    padding-top: 24px;
 }
 .full-div{
     width: 100%;
     height: 100%;
 }
-
+/*错误消息*/
 .error-msg{
     color:#F83939;
     padding: 0px 15px;
@@ -23,18 +23,50 @@
     width: initial;
 }
 
+/*通用*/
 .weui-input{
     font-size: 15px;
     padding: 8px 0;
     border-bottom: 1px solid #CCCCCC;
 }
+
+.weui-cells__title{
+    font-size: 11px;
+    margin-bottom: 0;
+    color: #BBBBBB;
+    letter-spacing: -0.265px;
+    margin-top: 3px;
+    display: block;
+}
+.weui-cell{
+    padding: 0 15px;
+    padding-bottom: 0px;
+}
+.weui-cell:before{
+    border: none;
+}
 .weui-input:focus{
     border-bottom: 1px solid #479BF8;
 }
-
+.error-input{
+    border-bottom: 1px solid #F83939;
+}
 input:-webkit-autofill 
 { 
     -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.weui-btn-area{
+    margin-top: 1em;
+}
+
+/*登录注册*/
+.forget-pass{
+    position: absolute;
+    right: 15px;
+    color: #479BF8;
+    font-size: 15px;
+    letter-spacing: -0.36px;
+    white-space: nowrap;
 }
 
 .login-btn{
@@ -52,8 +84,7 @@ input:-webkit-autofill
     position: absolute;
     right: 15px;
 }
-
-/*.contact-btn-delivered{
+.contact-btn-delivered{
     width:120px;
     display:block;
     color:#ffffff;
@@ -62,9 +93,31 @@ input:-webkit-autofill
     margin:0px auto;
     font-size: 14px;
     text-align: center;
-    padding: 9px 0;
-}*/
+    padding: 5px 0;
+}
+.foot{
+    margin-top: 16px;
+    padding: 0px 15px;
+    font-size: 13px;
+    height: 13px;
 
-.weui-cell:before {
-  border: none;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.dynamic-login{
+    width:40%;
+    color: #479BF8;
+}
+.reg{
+    width: 60%;
+    text-align: right;
+    color: #999999;
+}
+.reg a{
+    color: #479BF8;
 }
