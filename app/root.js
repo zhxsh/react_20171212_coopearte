@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import './css/weui.css';
-import './css/main.css';
+import { Link } from 'react-router';
+
 
 import LoginPass from './LoginPass';
 
@@ -10,7 +9,7 @@ class Root extends Component{
 	render(){
 		return (
 			<div>
-				<LoginPass />
+				{this.props.children}
 			</div>
 			)
 	}

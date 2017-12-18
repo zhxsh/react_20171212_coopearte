@@ -8,7 +8,7 @@ class Clock extends Component{
   render(){
     return (
       <div>
-        <h1>带有自己的变量state</h1>
+        <h1>Clock带有自己的变量state</h1>
         <h2>时间:{this.state.date.toLocaleTimeString()}.</h2>
       </div>
     )
